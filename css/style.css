@@ -28,11 +28,20 @@ header{
 }
 .menu-list li{
   padding: 0 20px;
+  position: relative;
 }
 .link{
   text-decoration: none;
   color: darkgrey;
   font-size: 20px;
+}
+.drop-menu{
+  display: none;
+  position: absolute;
+  left:0;
+  top:52px;
+  flex-direction: column;
+  border: 1px solid black;
 }
 
 .header-right{
