@@ -6,7 +6,11 @@
 }
 header{
   display: flex;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
+}
+body{
+  width: 95%;
+  margin: auto;
 }
 .header-left{
   width: 30%;
@@ -28,6 +32,7 @@ header{
 }
 .menu-list li{
   padding: 0 20px;
+  line-height: 80px;
   position: relative;
 }
 .link{
@@ -39,9 +44,25 @@ header{
   display: none;
   position: absolute;
   left:0;
-  top:52px;
+  top:80px;
   flex-direction: column;
-  border: 1px solid black;
+  flex-wrap: nowrap;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+
+}
+.drop-menu li{
+  line-height: 50px;
+  vertical-align: middle;
+}
+.drop-large li{
+  width: 400px;
+}
+.drop-medium li{
+  width: 250px;
+}
+
+.link-active{
+  color: black;
 }
 
 .header-right{
@@ -57,11 +78,15 @@ header{
 }
 .button{
   display: inline-block;
-  background-color: #D2007E;
+  background-color: rgb(235, 0, 141);
   padding: 10px;
   border-radius: 50px;
   color: white;
   font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
-
+  text-transform: uppercase;
+}
+.button:hover{
+  background-color: rgb(210, 0, 126);
 }
